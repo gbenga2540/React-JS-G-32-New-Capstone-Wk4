@@ -1,0 +1,220 @@
+.sign_up_main {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    display: flex;
+
+    .sign_up_container {
+        min-width: 100%;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    
+        .sign_up_img {
+            width: 80px;
+            min-width: 80px;
+            max-width: 80px;
+            height: 80px;
+            min-height: 80px;
+            max-height: 80px;
+            margin-bottom: 0px;
+        }
+
+        .sign_up_txt_top {
+            display: block;
+            font-size: 30px;
+            color: rgb(75, 161, 75);
+            margin-bottom: 30px;
+            font-family: poppins-meduim, sans-serif;
+        }
+        
+        .sign_up_form {
+            width: 380px;
+            min-width: 380px;
+            max-width: 380px;
+
+            height: 440px;
+            min-height: 440px;
+            max-height: 470px;
+
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgb(239, 241, 241);
+            border: 3px solid rgb(223, 221, 221);
+            text-align: left;
+
+            #sign_up_first_input {
+                margin-top: 15px;
+            }
+
+            #login_first_input {
+                margin-top: 15px;
+            }
+
+            .sign_up_input { 
+                width: 93%;
+                min-width: 93%;
+                max-width: 93%;
+                height: 39px;
+                min-height: 39px;
+                max-height: 39px;
+                margin-top: 1px;
+                font-family: poppins-meduim, sans-serif;
+                border-radius: 9px;
+                border: 3px solid rgb(223, 221, 221);
+                outline: none;
+                padding-left: 5px;
+                font-size: 12px;
+
+                &:focus {
+                    border: 3px solid rgb(100, 100, 255);
+                }
+            }
+
+            h4 {
+                padding-left: 5px;
+                align-self: center;
+                width: 93%;
+                min-width: 93%;
+                max-width: 93%;
+                height: 20px;
+                min-height: 20px;
+                max-height: 20px;
+                font-family: poppins-meduim, sans-serif;
+                margin-bottom: 0px;
+                margin-top: 10px;
+                font-size: 13.5px;
+                font-weight: 400;
+            }
+
+            .sign_up_button {
+                width: 92%;
+                min-width: 92%;
+                max-width: 92%;
+                height: 40px;
+                min-height: 40px;
+                max-height: 40px;
+                border-radius: 8px;
+                margin-top: 40px;
+                font-family: poppins-meduim, sans-serif;
+                font-size: 16px;
+                background-color: rgb(75, 161, 75);
+                outline: none;
+                border: none;
+                box-shadow: 1px 1px 3px rgba(105, 105, 105, 0.7);
+                transition: all 150ms ease-in-out;
+                color: white;
+
+                &:hover {
+                    transform: scale(1.03);
+                }
+            }
+
+            .sign_up_text {
+                margin-top: auto;
+                margin-bottom: auto;
+                font-family: poppins-meduim, sans-serif;
+                font-size: 14px;
+                color: black;
+                font-weight: 500;
+            }
+        }
+
+        #login_form {
+            height: 300px;
+            min-height: 300px;
+            max-height: 300px;
+        }
+    }
+}
+
+
+
+@media (max-width:720px) {
+    .sign_up_main {
+
+        .sign_up_container {
+            justify-content: flex-end;
+
+            .sign_up_img {
+                margin-top: auto;
+                margin-bottom: 0px;
+            }
+
+            .sign_up_txt_top {
+                display: block;
+                margin-bottom: auto;
+                margin-top: 5px;
+                font-size: 30px;
+                font-weight: 600;
+            }
+
+            .sign_up_form {
+                height: 65%;
+                min-height: 65%;
+                max-height: 65%;
+                width: 100%;
+                min-width: 100%;
+                max-width: 100%;
+                border-radius: 20px;
+                border-bottom-right-radius: 0px;
+                border-bottom-left-radius: 0px;
+                border-bottom: none;
+                border: 2px solid rgb(223, 221, 221);
+
+                #login_first_input {
+                    margin-top: 13px;
+                }
+
+                #sign_up_first_input {
+                    margin-top: 13px;
+                }
+
+                .sign_up_input {
+                    border: 2px solid rgb(223, 221, 221);
+                    height: 33px;
+                    min-height: 33px;
+                    max-height: 33px;
+                    margin-top: 0px;
+                    font-size: 11px;
+                }
+
+                h4 {
+                    font-size: 11.5px;
+                    margin-top: 9px;
+                }
+
+                .sign_up_button {
+                    margin-top: 26px;
+                    height: 35px;
+                    min-height: 35px;
+                    max-height: 35px;
+                    font-size: 13.5px;
+                }
+
+                .sign_up_text {
+                    font-size: 13px;
+                    font-weight: 500;
+                    margin-top: auto;
+                    margin-bottom: auto;
+                }
+            
+            }
+            #login_form {
+                height: 290px;
+                min-height: 290px;
+                max-height: 290px;
+            }
+        }
+    }
+}
