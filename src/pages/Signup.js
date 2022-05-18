@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router';
 import './Auth.scss';
 import adminlogo from '../images/admin-logo-black.png';
@@ -31,22 +31,20 @@ const Signup = ({ setCanLogin, setIsAdminPage }) => {
         }
     }
 
-    useEffect(() => {
-        const ses_username = sessionStorage.getItem('admin-username');
-        const ses_password = sessionStorage.getItem('admin-password');
-        if (ses_password != null && ses_username != null){
-            setRedirect(true);
-            setTimeout(() => {
-                setCanLogin(true);
-                navigate("/");
-                setIsAdminPage(false);
-                setRedirect(false);
-            }, 1500);
-        }else{
-            setCanLogin(false);
-            setIsAdminPage(true);
-        }
-    });
+    const ses_username = sessionStorage.getItem('admin-username');
+    const ses_password = sessionStorage.getItem('admin-password');
+    if (ses_password != null && ses_username != null){
+        setRedirect(true);
+        setTimeout(() => {
+            setCanLogin(true);
+            navigate("/");
+            setIsAdminPage(false);
+            setRedirect(false);
+        }, 1500);
+    }else{
+        setCanLogin(false);
+        setIsAdminPage(true);
+    }
 
     return (
         <div className='sign_up_main'>

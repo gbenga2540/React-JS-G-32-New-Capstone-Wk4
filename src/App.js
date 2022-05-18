@@ -15,7 +15,7 @@ import Team from './pages/Team';
 import Clients from './pages/Clients';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import menuicon from './images/menu-icon-black.png';
 
 
@@ -24,16 +24,6 @@ function App() {
   const [sidebar, setSideBar] = useState(false);
   const [isAdminPage, setIsAdminPage] = useState(true);
   const [canLogin, setCanLogin] = useState(false);
-
-  useEffect(() => {
-    const username = sessionStorage.getItem('admin-username');
-    const password = sessionStorage.getItem('admin-password');
-    if(username != null && password != null) {
-      setCanLogin(true);
-    }else {
-      setCanLogin(false);
-    }
-  }, []);
 
   return (
     <div className="app_main">
