@@ -1,5 +1,5 @@
 #Deployment link
-https://g32-admin-dashboard.netlify.app/
+https://g32-new-admin-dashboard.netlify.app/
 
 # Getting Started with Create React App
 
