@@ -1,0 +1,90 @@
+.page {
+    background-color: #eee;
+    padding: 20px;
+    
+}
+.heading {
+    text-align: center;
+    color: rgb(102, 90, 138);
+    font-size: 3rem;
+}
+.t {
+    border: 2px solid rgb(153, 186, 194);
+    width: 900px;
+}
+.thead {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-bottom: 5px solid black;
+}
+.thead th {
+    gap: 5rem;
+
+    color: rgb(110, 131, 109);
+    font-size: 2rem;
+}
+.phone {
+    margin-left: 3rem;
+}
+.photo {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+.members {
+    list-style: none;
+    width: 900px;
+ 
+}
+.member {
+    display: flex;
+    flex-direction: row;
+    padding: 1.5rem;
+    margin: 1rem;
+ 
+    justify-content: space-between;
+    background-color: #a8d1d5;
+}
+.members p {
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 480px) {
+    .t{
+        width:370px;
+    }
+
+    .thead {
+           
+            border-bottom: 2px solid black;
+        }
+    .thead th {
+            gap: 3rem;
+        
+            color: rgb(110, 131, 109);
+            font-size: 1rem;
+        }
+
+    
+    .members {
+        width: 370px;
+    }
+
+    .members p {
+        font-size: 0.5rem;
+    }
+    .photo {
+        width: 30px;
+        height: 30px;
+    }
+    .phone {
+        margin-left: 0rem;
+    }
+    .page {
+        width: 480px;       
+    }
+    .heading{
+        width:70%;
+    }
+}
