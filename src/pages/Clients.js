@@ -6,6 +6,7 @@ const Clients = ({ setPageNumber, clientApiData }) => {
 
   return (
     <div className='clients_main'>
+      <h1>Clients</h1>
       <table className='clients_table'>
         <thead className='clients_thead'>
           <tr>

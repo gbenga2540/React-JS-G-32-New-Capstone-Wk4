@@ -9,6 +9,13 @@
     align-items: center;
     justify-content: center;
     font-family: poppins-meduim, sans-serif;
+    flex-direction: column;
+
+    h1 {
+        margin-bottom: 40px;
+        font-size: 60px;
+        color: #00634f;
+    }
 
     .clients_table {
         display: block;
@@ -88,6 +95,13 @@
         align-items: center;
         justify-content: center;
         font-family: poppins-meduim, sans-serif;
+
+        h1 {
+            margin-bottom: 0px;
+            font-size: 20px;
+            color: #00634f;
+            transform: translateY(80px) scale(1);
+        }
     
         .clients_table {
             display: block;
