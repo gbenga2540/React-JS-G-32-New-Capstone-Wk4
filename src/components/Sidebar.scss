@@ -11,7 +11,7 @@
     max-height: 100%;
     overflow: hidden;
     position: absolute;
-    background-color: rgb(9, 11, 41);
+    background-color: #00634f;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     transition: all 0.43s cubic-bezier(0.215, 0.610, 0.355, 1);
@@ -256,6 +256,11 @@
                 flex-grow: 1;
                 padding-left: 17px;
                 font-weight: 400;
+                transition: all 150ms ease-in-out;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
             }
 
             .s_logout_icons {
@@ -299,7 +304,7 @@
     max-height: 100%;
     overflow: hidden;
     position: absolute;
-    background-color: rgb(9, 11, 41);
+    background-color: #005040;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     transition: all 0.43s cubic-bezier(0.215, 0.610, 0.355, 1);
@@ -544,6 +549,11 @@
                 flex-grow: 1;
                 padding-left: 17px;
                 font-weight: 400;
+                transition: all 150ms ease-in-out;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
             }
 
             .s_logout_icons {

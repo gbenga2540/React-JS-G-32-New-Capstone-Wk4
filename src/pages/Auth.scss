@@ -30,7 +30,7 @@
         .sign_up_txt_top {
             display: block;
             font-size: 30px;
-            color: rgb(75, 161, 75);
+            color: #009174;
             margin-bottom: 30px;
             font-family: poppins-meduim, sans-serif;
         }
@@ -108,7 +108,7 @@
                 margin-top: 40px;
                 font-family: poppins-meduim, sans-serif;
                 font-size: 16px;
-                background-color: rgb(75, 161, 75);
+                background-color: #009174;
                 outline: none;
                 border: none;
                 box-shadow: 1px 1px 3px rgba(105, 105, 105, 0.7);
@@ -195,7 +195,7 @@
                 }
 
                 .sign_up_button {
-                    margin-top: 26px;
+                    margin-top: 20px;
                     height: 35px;
                     min-height: 35px;
                     max-height: 35px;
@@ -205,8 +205,8 @@
                 .sign_up_text {
                     font-size: 13px;
                     font-weight: 500;
-                    margin-top: auto;
-                    margin-bottom: auto;
+                    margin-top: 10px;
+                    margin-bottom: 40px;
                 }
             
             }

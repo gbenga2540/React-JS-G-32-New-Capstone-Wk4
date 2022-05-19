@@ -15,8 +15,9 @@ import Team from './pages/Team';
 import Clients from './pages/Clients';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import menuicon from './images/menu-icon-black.png';
+import Axios from 'axios';
 
 
 function App() {
@@ -24,6 +25,17 @@ function App() {
   const [sidebar, setSideBar] = useState(false);
   const [isAdminPage, setIsAdminPage] = useState(true);
   const [canLogin, setCanLogin] = useState(false);
+
+  const [clientApiData, setClientApiData] = useState([]);
+
+  useEffect(() => {
+    Axios.get("https://fakerapi.it/api/v1/companies?_quantity=10")
+    .then((response) => {
+      setClientApiData(response.data.data);
+    }).catch(error => {
+      console.error(error);
+    })
+  }, []);
 
   return (
     <div className="app_main">
@@ -57,7 +69,7 @@ function App() {
             </Route>
 
             <Route element={<ProtectedRoutes canLogin={canLogin} outletRoute={'/clients'} />}>
-              <Route path="/clients" element={<Clients setPageNumber={setPageNumber} />}></Route>
+              <Route path="/clients" element={<Clients setPageNumber={setPageNumber} clientApiData={clientApiData} />}></Route>
             </Route>
           </Routes>  
         </main>
